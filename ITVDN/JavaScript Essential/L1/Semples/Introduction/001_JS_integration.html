@@ -1,0 +1,52 @@
+<!-- Так мы пишем коментарии в разметке 
+И коментарии эти и однострочные и многострочные одновременно 
+-->
+<!-- 
+/* комментарии CSS, JavaScript, */
+// однострочные комментарии JavaScript     -->
+
+<!-- 
+<style>
+#div {position: relative; padding-bottom: 25px;}
+#div:before { /* текст после формы создания иконки другого ресурса */ 
+  content: "Пример, twitter.com";
+  position: absolute;
+  color: rgb(109, 109, 109);
+  font-size: 80%;
+  bottom: 0px;
+}
+</style>
+-->
+<!-- 
+<script>
+function changeText2(){
+ var userInput = "http://favicon.yandex.net/favicon/" + document.getElementById('userInput').value; // заменить часть src
+ document.getElementById('boldStuff2').alt = document.getElementById('userInput').value; /* заменить alt */
+ document.getElementById('boldStuff2').src = userInput;
+}
+</script>
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Integration</title>
+        <!-- Teg script -->
+        <script type="text/javascript">
+            // Здесь уже начаслся скрипт, поэтому однострочный коментарий записывается вот так 
+
+            alert("Hellow world");
+
+            document.write ("Hellow? world again!");
+
+            /* 
+            Так записывается 
+            многострочный коментарий в скрипте 
+            */
+        //Teg script DONE
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
+
