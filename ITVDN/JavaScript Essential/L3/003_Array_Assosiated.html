@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Переменная</title>
+        <!-- Teg script -->
+        <script type="text/javascript">
+            //  Объект имеющий 3 свойства 
+            var laptop = { cup:'75856', ram:'435768654', screen:'567865'};
+
+            //  Запрос на введение имени свойства 
+            var key = prompt("Введите интересующий параметр ( экран, память и т. д.","");
+            
+            //  Обращение на к массиву по ключу 
+            var value = laptop[key]
+            document.write (value + "<hr/>");
+            
+            //  Обращение на к массиву по ключу 
+            //  Данные выражения имеют одинаковые значения
+            document.write ("<p>" + laptop.cup);
+            document.write ("<p>" + laptop['cup']);
+    
+
+            //Teg script DONE
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
