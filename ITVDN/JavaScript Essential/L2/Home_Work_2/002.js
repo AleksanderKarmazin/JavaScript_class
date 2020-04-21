@@ -16,11 +16,11 @@
 // var d = prompt("Текст призыва", "Чернобелая подсказка")
 // alert(d)
 
-var confermation_var = prompt("Санёк, ты дурачёк ?", "0 or 1");
+var confermation_var = confirm("Санёк, ты дурачёк ?");
 
 
 
-if (confermation_var > 0)
+if (confermation_var  == true)
     {
         for (let i = 0; i < 5; i++) { // выведет 0, затем 1, затем 2
             document.write("<h1>Санёк ты дурак!<h1/>" + i + "<br/>");
@@ -30,7 +30,10 @@ if (confermation_var > 0)
     }
 else {
 
-    document.write( "No, I am not fool");
+        for (let i = 0; i < 5; i++) { // выведет 0, затем 1, затем 2
+            document.write("<h1>Ты компьтерный гений!<h1/>" + i + "<br/>");
+            document.write("<iframe src='https://gifer.com/embed/17Cg' width=960 height=480 frameBorder='0' allowFullScreen></iframe>" + "<br/>");
+        }
 }
 
 
