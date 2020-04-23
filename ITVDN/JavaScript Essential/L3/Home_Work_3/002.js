@@ -1,56 +1,20 @@
 
-// Variables creation 
+// Variables creation
 
-var counter = 0;
+var array_1 = ['hello ', 7 ,'567','Миша', 5678968,'w']
 
-while (counter<10) {
-    counter++
-    document.write ( counter + "<br/>")
-    if (counter == 5) {
-        break;
-    }
-}
+var array_2 = ['hello ', 7 ,'567','Миша', 5678968,'w']
 
+document.write("<hr/>"); 
+document.write(array_1); 
 
-var counter = 0;
-
-document.write ("<br/>")
-document.write ( counter + "<br/>")
-document.write ( ++counter + "<br/>")
-document.write ( ++counter + "<br/>")
-document.write ( counter++ + "<br/>")
-
-do {
-    counter++
-    document.write ( counter + "<br/>")
-    if (counter == 7) {
-        break;
-    } 
-
-}
-    while (counter<20) 
-      
-    
-for (let i = 0; i < 5; i++) { // выведет 0, затем 1, затем 2
-        document.write("<h1>Санёк ты дурак!<h1/>" + i + "<br/>");
-        document.write("<h6>Санёк ты дурак!<h6/>" + i + "<br/>");
-}
-
-document.write("===================================================================================")
-document.write("<br/>")
-document.write("<br/>")
+document.write("<hr/>"); 
 
 
-var count = prompt ("How many itteration do you want? ");
-var exit = prompt ("What namber you do not want to see? ");
+var array_3 = [ , , ]
 
-for (var i =0; i<count; i++) {
-    if (i == exit) {
-        
-        document.write("<br/>")
-        continue;
-    }
-    else  {
-        document.write(i + "<br/>")
-    }
-}
+
+document.write("<hr/>"); 
+document.write("<hr/>"); 
+document.write("<hr/>"); 
+
