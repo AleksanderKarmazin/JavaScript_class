@@ -1,6 +1,8 @@
 
 
-
+function Doc(){
+    document.write("<h1>Всегда используйте «use strict»</h1>"); 
+}
 
 
 

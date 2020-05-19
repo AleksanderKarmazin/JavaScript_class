@@ -2,8 +2,13 @@
 
 
 
+function  Doc() {
+    document.write("Hello, world! Document wright");
+}
 
-
+function  Messege() {
+    alert("Hello, world! Alert")
+}
 
 
 
