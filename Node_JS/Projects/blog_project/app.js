@@ -3,7 +3,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const bodyParser = require('body-parser'); // Для чтения методов POST
+var bodyParser = require('body-parser'); // Для чтения методов POST
+
+// Для работы с Монго ДБ нужна библиотека Монгос
+// Поэтомк  npm install mongoose --save
+
+// Ставим бэйбл и присеты 
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -49,8 +55,9 @@ app.get ('/posts/:id', function (req,res) {
 app.post('/posts', function (req,res) {
   const data = req.body;
   console.log(data);
-  post.push(data);
-  return res.send (posts); // Передать ответ если мы не хотим чтобы запрос выполнялся постоянно 
+  posts.push(data);
+  return res.send (posts); // Передать ответ если мы не хотим чтобы запрос выполнялся постоянно
+
 });
 
 
@@ -82,14 +89,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-
-
-
-
-
-
-
 
 
 module.exports = app;
