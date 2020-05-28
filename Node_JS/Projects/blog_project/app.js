@@ -3,11 +3,16 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const bodyParser = require('body-parser'); // Для чтения методов POST
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+
+
+app.use (bodyParser.urlencoded({extended: true})); // Для чтения методов POST
+app.use (bodyParser.json()); // Для чтения методов POST
 
 const posts = [
 
@@ -31,8 +36,21 @@ const posts = [
 ];
 
 app.get ('/posts', function (req,res) {
-
   return res.send(posts);
+});
+
+
+app.get ('/posts/:id', function (req,res) {
+  const id = req.params.id
+  return res.send(posts[id]);
+});
+
+
+app.post('/posts', function (req,res) {
+  const data = req.body;
+  console.log(data);
+  post.push(data);
+  return res.send (posts); // Передать ответ если мы не хотим чтобы запрос выполнялся постоянно 
 });
 
 
