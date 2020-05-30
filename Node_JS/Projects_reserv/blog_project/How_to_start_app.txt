@@ -1,0 +1,5 @@
+1. cmd in curent dir 
+2. set DEBUG=blog_project:* & npm start
+3. http://localhost:3000/ 
+
+https://expressjs.com/ru/starter/generator.html
