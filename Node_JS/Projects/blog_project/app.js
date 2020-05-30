@@ -7,6 +7,7 @@ const bodyParser = require('body-parser'); // Для чтения методов
 const mongoose = require('mongoose');
 const PostModel = require('./Post');
 
+
 // Для работы с Монго ДБ нужна библиотека Монгос
 // Поэтомк  npm install mongoose --save
 // Ставим бэйбл и присеты 
