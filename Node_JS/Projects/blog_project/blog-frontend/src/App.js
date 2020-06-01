@@ -15,10 +15,14 @@ function App() {
             Add Post
           </button>
           <div className="content">
-            <div className="content5">
-              <div className="content5">
-                <div className="content5">
-                </div>
+            <div className="post-items">
+              <div className="post-ite">
+                <a href="#"><h2>Post title</h2>
+                </a>
+                <p><i>Post on November 2, 2018</i>
+                  <a href="#">Remove</a>
+                  <a href="#">Edit</a>
+                </p>
               </div>
             </div>
           </div>
