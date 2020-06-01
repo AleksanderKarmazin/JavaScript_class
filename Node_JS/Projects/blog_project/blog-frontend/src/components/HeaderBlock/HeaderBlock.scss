@@ -1,0 +1,41 @@
+.header-block {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    height: 450;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1,
+    h3 {
+        color:white;
+    }
+
+    h1{
+        font-weight: bold;
+        font-size: 50px;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &_center {
+        text-align: center;
+    }
+
+    &_overlay{
+        position: absolute;
+        left:top;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background-color: red($color: #eb1010);
+
+    }
+
+    
+
+}
