@@ -3,7 +3,6 @@ import { HeaderBlock } from './components'
 function App() {
   return (
     <div className="App">
-      <h1>Helow world!</h1>
       <HeaderBlock
         title="Заголовок сайта"
         discription="Описание"
