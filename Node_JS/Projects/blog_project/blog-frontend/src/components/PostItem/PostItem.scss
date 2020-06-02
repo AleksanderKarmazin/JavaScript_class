@@ -1,0 +1,22 @@
+.post-items {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid red;
+    a{
+        color: rgb(2, 2, 2);
+    }
+
+    h2{
+        font-weight: bold;
+    }
+
+    p,
+    p a {
+        color: green($color: #000000);
+    }
+
+    p a{
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}

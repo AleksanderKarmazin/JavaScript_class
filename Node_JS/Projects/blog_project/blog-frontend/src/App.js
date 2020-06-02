@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderBlock } from './components'
+import { HeaderBlock, PostItem } from './components'
 function App() {
   return (
     <div className="App">
@@ -15,14 +15,12 @@ function App() {
           </button>
           <div className="content">
             <div className="post-items">
-              <div className="post-ite">
-                <a href="#"><h2>Post title</h2>
-                </a>
-                <p><i>Post on November 2, 2018</i>
-                  <a href="#">Remove</a>
-                  <a href="#">Edit</a>
-                </p>
-              </div>
+              <PostItem _id="1" title = "Загловок статьи" createdAt = {'' + new Date()} />
+              <PostItem _id="1" title = "Загловок статьи" createdAt = {'' + new Date()} />
+              <PostItem _id="1" title = "Загловок статьи" createdAt = {'' + new Date()} />
+              <PostItem _id="1" title = "Загловок статьи" createdAt = {'' + new Date()} />
+              <PostItem _id="1" title = "Загловок статьи" createdAt = {'' + new Date()} />
+              <PostItem _id="1" title = "Загловок статьи" createdAt = {'' + new Date()} />
             </div>
           </div>
         </div>
