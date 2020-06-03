@@ -1,5 +1,8 @@
 import React from 'react';
-import { HeaderBlock, PostItem } from './components'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+
+import { HeaderBlock, PostItem, AddForm } from './components'
 function App() {
   return (
     <div className="App">
@@ -10,48 +13,25 @@ function App() {
       />
       <div className="container">
         <div className="content">
-          <button type="submit" className="btn btn-primary">
+          {/*<button type="submit" className="btn btn-primary">
             Add Post
-          </button>
+          </button>*/}
           <div className="content">
-            {/*<div className="post-items">
+            <Router>
+              <div className="post-items">
               <PostItem _id="1" title = "Загловок статьи" createdAt = {'' + new Date()} />
-            </div>*/}
-            <form className="add-form">
-              <div className="form-group">
-                <div className="add-form_row">
-                  <h4>
-                    <label for="title">Title</label>
-                  </h4>
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="title"
-                    placeholder="name@example.com"
-                  />
-                </div>
-                <div className="add-form_row">
-                  <h4>
-                    <label for="image">Image URL</label>
-                  </h4>
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="image"
-                    placeholder="Enter image URL"
-                  />
-                </div>
-                <div className="add-form_row">
-                  <h4>
-                    <label for="discription">Discription</label>
-                  </h4>
-                  <textarea rows="10" className="form-control" id="discription" placeholder="Enter discription" />
-                </div>
               </div>
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
-            </form>
+              <div>
+                <Switch>
+                  {/*<Route path="/" component={PostsList} />*/}
+                  {/*<Route path="/post/:id" component={FullPost} />*/}
+                  {/*<Route path="/not-found" component={NotFound} />*/}
+                </Switch>
+              </div>
+            </Router>
+
+
+
           </div>
         </div>
       </div>
