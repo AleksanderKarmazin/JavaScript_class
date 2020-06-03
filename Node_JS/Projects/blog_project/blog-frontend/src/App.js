@@ -26,7 +26,7 @@ function App() {
                   {/*<Route path="/" component={PostsList} />*/}
                   {/*<Route path="/post/:id" component={FullPost} />*/}
                   {/*<Route path="/not-found" component={NotFound} />*/}
-                </Switch>
+                </Switch>  
               </div>
             </Router>
           </div>
