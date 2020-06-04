@@ -44,8 +44,6 @@ function App() {
                   />
                   <Route path="/post/:id" component={()=>(
                     <FullPost title="Заголовок статьи" createdAt={" "+ new Date()}/>
-
-
                   )} />
                   {/*<Route path="/not-found" component={NotFound} />*/}
                 </Switch>
