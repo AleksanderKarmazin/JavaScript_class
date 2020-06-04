@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 
-import { HeaderBlock, PostItem, AddForm } from './components'
+import { HeaderBlock, PostsList, FullPost } from './components'
 function App() {
   return (
     <div className="App">
@@ -18,15 +18,37 @@ function App() {
           </button>*/}
           <div className="content">
             <Router>
-              <div className="post-items">
-              <PostItem _id="1" title = "Загловок статьи" createdAt = {'' + new Date()} />
-              </div>
               <div>
                 <Switch>
-                  {/*<Route path="/" component={PostsList} />*/}
-                  {/*<Route path="/post/:id" component={FullPost} />*/}
+                  <Route path="/"
+                  exact 
+                  component={() => (
+                   <PostsList posts = {[
+                     {
+                        _id:'1',
+                        title:'Первая статья',
+                        createdAt: ''+ new Date()
+                     },
+                     {
+                        _id:'2',
+                        title:'Вторая статья',
+                        createdAt: ''+ new Date()
+                     },
+                     {
+                        _id:'3',
+                        title:'Третья статья',
+                        createdAt: ''+ new Date()
+                     },
+                     ]} />
+                   )}
+                  />
+                  <Route path="/post/:id" component={()=>(
+                    <FullPost title="Заголовок статьи" createdAt={" "+ new Date()}/>
+
+
+                  )} />
                   {/*<Route path="/not-found" component={NotFound} />*/}
-                </Switch>  
+                </Switch>
               </div>
             </Router>
           </div>
