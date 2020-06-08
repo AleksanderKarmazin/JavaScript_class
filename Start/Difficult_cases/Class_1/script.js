@@ -1,28 +1,38 @@
+// PROTOTYPE
 
 
+// const person = {
+//     name:'Maxim',
+//     age:25,
+//     greet: function(){
+//         console.log ('Greet!')
+//     }
 
+// }
 
-function  Doc() {
-    document.write("Hello, world! Document wright");
+const person = new Object ({
+    name:'Maxim',
+    age:25,
+    greet: function(){
+        console.log ('Greet!')
+    }
+
+})
+
+// const a = person.age;
+// console.log(a); 
+
+// Дополняем условный класс на дж ес новой функцией
+Object.prototype.sayHellow = function() {
+    console.log('Hellow!')
 }
 
-function  Messege() {
-    alert("Hello, world! Alert")
-}
+// Наследуем от персоны к лене все его свойства
+const lena = Object.create(person)
 
+lena.name = 'Elena'
 
-
-
-
-
-
-/*
-
-alert ('This is lasson 01');
-var user_name = prompt ('What is your name');
-console.log (user_name);
-
-var is_adult = confirm('Are you adult?');
-console.log (is_adult);
-
-*/
+// const str = 'I am string'
+const str = new String ('I am string')
+// Вызовы этот стр в консоле браузера и посмотри методы 
+// которыми ты часто пользуешся 
