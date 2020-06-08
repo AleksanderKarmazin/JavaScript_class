@@ -3,6 +3,10 @@ import PostItem from '../PostItem/PostItem';
 import './PostsList.scss';
 
 
+
+
+
+
 const PostsList =({ posts })=> {
     return (
       <div className="post-items">

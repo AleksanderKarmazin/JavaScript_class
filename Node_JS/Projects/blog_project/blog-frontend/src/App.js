@@ -20,10 +20,13 @@ function App() {
             <Router>
               <div>
                 <Switch>
+                  
                   <Route path="/"
                   exact 
                   component={() => (
-                   <PostsList posts = {[
+                    
+                   
+                   <PostsList  posts = {[
                      {
                         _id:'1',
                         title:'Первая статья',
@@ -42,9 +45,11 @@ function App() {
                      ]} />
                    )}
                   />
-                  <Route path="/post/:id" component={()=>(
+                  <Route path="/post/:id" component={FullPost} />
+                  
+                  {/* <Route path="/post/:id" component={()=>(
                     <FullPost title="Заголовок статьи" createdAt={" "+ new Date()}/>
-                  )} />
+                  )} /> */}
                   {/*<Route path="/not-found" component={NotFound} />*/}
                 </Switch>
               </div>
